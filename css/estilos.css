@@ -8,7 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
 
-  
+
 
 .imagen
 {
@@ -100,10 +100,11 @@ nav
     max-width: 100%;
   
 }
+
 .mfilas
 {
     list-style: none;
-    padding: .8%;
+     padding: .8%;
     border-right:1.5px solid  #009999;
     color:#333;
    font-family: 'Lato', sans-serif;
@@ -114,8 +115,18 @@ nav
 {
 font-weight: bolder;
     color: #009999;
+   
 }
+/* MOSTRAR Y OCULTAR MENU */
 
+ #movil
+{
+    display: none;
+}
+#pc
+{
+     display: flex; 
+}
 /*PRODUCTOS*/
 
 .productos
@@ -247,7 +258,7 @@ nav
 }
 .menu
 {
-    display: flow-root;
+    display:grid;
     margin:0 auto;
     justify-content:flex-end;
     max-width: 85%;
@@ -293,8 +304,7 @@ display: grid;
     /* TARJETAS COLOR VERDE*/
 .cardos
 {
-    
- height: 200px;
+height: auto;
     max-height: 100%;
     margin: 2%;
     padding-bottom: .5%;
@@ -319,35 +329,45 @@ display: grid;
     padding-bottom:10%;
   font-size: 1.1em;
 }
-        /*CAMBIAR ORDEN DE MENU*/
-    .menu {
-    display: grid;
-  }
-   
+    
+    
+/* MOSTRAR Y OCULTAR MENU */ 
+   #movil
+{
+    display: flex;
+}
+    #pc
+    {
+        display: none;
+    }
+   /*CAMBIAR ORDEN DE MENU*/
   .menu li:nth-of-type(1) {
-    order: 6;
-     
+    order: 5;
+
   }
  
   .menu li:nth-of-type(2) {
-    order: 5;
+    order: 6;
       
   }
  
   .menu li:nth-of-type(3) {
-    order: 4;
+    order: 3;
   }
  
   .menu li:nth-of-type(4) {
-    order: 3;
+     order: 4;
   }
 
    .menu li:nth-of-type(5) {
     order: 2;
+     
   }
  
   .menu li:nth-of-type(6) {
     order: 1;
+  
+    
   }  
 
 
