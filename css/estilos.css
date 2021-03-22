@@ -6,7 +6,16 @@
 
 /* CONTENIDOS SECUNDARIOS*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');*/
+
+#copias
+{
+   position: fixed;
+    top: 50%;
+    left:50%;
+    width: 10%;
+    display: none;
+}
 
 
 
@@ -204,6 +213,18 @@ max-width: 100%;
     border-radius: 50%;
 }
 
+@media screen and (min-width:1px)  and (max-width:1024px)
+    
+{
+ #copias 
+{
+   position: inherit;
+    top: 0%;
+    left:0%;
+   display: none;
+    width: 0%;
+}
+}
 /* ---------------------------------------------------
     TABLETS
 ----------------------------------------------------- */
@@ -211,6 +232,8 @@ max-width: 100%;
 @media screen and (min-width:768px)  and (max-width:1365px)
 {
  
+
+
 .inicio
 {
 max-width: 100%;
@@ -340,6 +363,7 @@ height: auto;
     {
         display: none;
     }
+    
    /*CAMBIAR ORDEN DE MENU*/
   .menu li:nth-of-type(1) {
     order: 5;
